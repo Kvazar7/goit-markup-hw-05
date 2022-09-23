@@ -19,6 +19,7 @@
    --shadow-color-three: rgba(0, 0, 0, 14%);
    --shadow-color-four: rgba(0, 0, 0, 20%);
    --overlay-color-one: rgba(47, 48, 58, 40%);
+   --overlay-color-two: rgba(47, 48, 58, 0.8);
 }
 *,
 *::before,
@@ -224,7 +225,28 @@ body {
 .whatwedo-list {
     display: flex;
     gap: 30px;
+    position: relative;
 }
+.whatwedo-overlay {
+    display: flex;
+    position: absolute;
+    bottom: 0;
+    justify-content: center;
+    align-items: center;
+    width: 370px;
+    height: 70px;
+    background: var(--overlay-color-two);
+}
+.whatwedo-text {
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1,14;
+    text-align: center;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: var(--fourth-color);
+}
+
 .ourteam-section {
     background-color: var(--secondary-background);
 }
@@ -448,7 +470,10 @@ body {
     color: var(--secondary-color)
 }
 
-
+.is-hiden {
+    opacity: 0;
+    pointer-events: none;
+}
 .backdrop {
     position: fixed;
     top: 0;
@@ -457,7 +482,6 @@ body {
     height: 100%;
     background-color: rgba(0, 0, 0, 0.2);
 }
-
 .modal {
     position: absolute;
     top: 50%;
