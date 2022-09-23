@@ -470,7 +470,7 @@ body {
     color: var(--secondary-color)
 }
 
-.is-hiden {
+.backdrop.is-hiden {
     opacity: 0;
     pointer-events: none;
 }
