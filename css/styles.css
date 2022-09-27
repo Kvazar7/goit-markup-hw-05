@@ -41,10 +41,6 @@ img {
     display: block;
     max-width: 100%;
 }
-/* :hover,
-:focus {
-    transition: 250ms var(--time-distribution-function);
-} */
 body {
     font-family: 'Roboto', sans-serif;
     background-color: var(--fourth-color);
